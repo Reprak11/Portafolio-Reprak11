@@ -15,10 +15,12 @@ body, html{
     font-family: 'Roboto', sans-serif;
 }
 header{
+    position: fixed;
     display: flex;
     background-color: var(--background-color);
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
     img.logo {
         width: 6.5rem;
@@ -38,14 +40,21 @@ header{
         position: absolute;
         left: 0;
         padding: 1.5rem 0 0 1.5rem;
+        cursor: pointer;
     }
     nav ul.nav-menu {
         list-style: none;
         width: 100%;
-        display: none;
+        transition: opacity 0.3s ease-out, max-height 0.1s ease-out;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
     }
     nav ul.nav-menu.show{
-        display: block;
+        /*display: block;*/
+        opacity: 1;
+        max-height: 100%;
+        transition: opacity 0.4s ease-in, max-height 0.4s ease-in;
     }
     nav li{
         width: 100%;
@@ -61,3 +70,57 @@ header{
         font-weight: bold;
         text-transform: uppercase;
     }
+main div.home{
+    padding-top: 11rem;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    main .home img.perfil{
+        border-radius: 50%;
+        height: 12.5rem;
+        width: 12.5rem;
+    }
+    main .home h2.home-title{
+        font-size:1.9rem;
+        margin-top: 5%;
+        color: var(--background-color);
+    }
+    main .home span.home-profession{
+        font-size: 1.2rem;
+        font-weight: 410;
+        color: var(--background-color);
+    }
+    main .home .home-contacts{
+        margin:5% 0;
+        width: 13rem;
+        display: flex;
+        justify-content: space-around;
+    }
+        main .home .home-contacts a.home-logos{
+            color: #001A76
+        }
+            main .home .home-contacts a.home-logos:hover{
+                color: #001AA3;
+                transform: scale(1.5,1.5);
+                filter: drop-shadow(-3px -3px 2px rgba(184, 88, 96, 0.849))
+                        drop-shadow( 5px  5px 5px rgba(0, 0, 0, 0.2))
+                        drop-shadow( 15px 15px 15px rgba(0, 0, 0, 0.2));
+            }
+    main .home a.cv-button{
+        text-decoration:none;
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: var(--background-color);
+        color: var(--main-color);
+        margin-top: 0.5rem;
+        padding: 0.6rem 3rem;
+        border-radius: 6px;
+    }
+        main .home a.cv-button:hover{
+            background-color: var(--main-color);
+            box-shadow: inset 4px 7px 35px 22px rgba(13,13,13,0.84);
+            transform: scale(1.1,1.1);
+        }
