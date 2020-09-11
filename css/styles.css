@@ -26,7 +26,6 @@ header{
         width: 6.5rem;
         height: 6rem;
         border-radius: 50%;
-        margin-top: 3%;
     }
     nav.nav-bar{
         position: relative;
@@ -39,7 +38,7 @@ header{
         color: var(--main-color);
         position: absolute;
         left: 0;
-        padding: 1.5rem 0 0 1.5rem;
+        padding: 2rem 0 0 2rem;
         cursor: pointer;
     }
     nav ul.nav-menu {
