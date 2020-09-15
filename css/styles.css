@@ -2,6 +2,8 @@
 :root{
     --main-color: #D9303E;
     --background-color: #0D0D0D;
+    --logo-color: #001A76;
+    --logo-color-hover:#001AA3;
 }
 * {
     margin: 0;
@@ -21,6 +23,7 @@ header{
     flex-direction: column;
     align-items: center;
     width: 100%;
+    border-bottom: solid var(--main-color) 0.1rem;
 }
     img.logo {
         width: 6.5rem;
@@ -71,6 +74,7 @@ header{
     }
 main div.home{
     padding-top: 11rem;
+    padding-bottom: 2.5rem;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -99,10 +103,11 @@ main div.home{
         justify-content: space-around;
     }
         main .home .home-contacts a.home-logos{
-            color: #001A76
+            color: var(--logo-color);
+            transition: all 0.3s ease;
         }
             main .home .home-contacts a.home-logos:hover{
-                color: #001AA3;
+                color: var(--logo-color-hover);
                 transform: scale(1.5,1.5);
                 filter: drop-shadow(-3px -3px 2px rgba(184, 88, 96, 0.849))
                         drop-shadow( 5px  5px 5px rgba(0, 0, 0, 0.2))
@@ -115,11 +120,81 @@ main div.home{
         background-color: var(--background-color);
         color: var(--main-color);
         margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
         padding: 0.6rem 3rem;
         border-radius: 6px;
+        transition: all 0.5s ease;
     }
         main .home a.cv-button:hover{
             background-color: var(--main-color);
             box-shadow: inset 4px 7px 35px 22px rgba(13,13,13,0.84);
             transform: scale(1.1,1.1);
         }
+main .about-me{
+    background-color: var(--background-color);
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+}
+    main .about-me .about-title{
+        font-size:1.9rem;
+    }
+    main .about-me .about-paragraph{
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    main .about-me .experience{
+        padding-top: 2.5rem;
+    }
+        main .about-me .experience h3{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        main .about-me .experience ul{
+            list-style: none;
+            margin-left: 2rem;
+        }
+            main .about-me .experience ul li{
+                display: flex;
+                justify-content: center;
+                margin: 1rem;
+            }
+                main .about-me .experience ul li i{
+                    font-size: 2rem;
+                }
+                main .about-me .experience ul li .exp-div{
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 1.3rem;
+                    width: 11rem;
+                }
+main .skills{
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    main .skills h2.skills-title{
+        font-size:1.9rem;
+        padding: 1.5rem;
+    }
+    main .skills .skills-items{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:2rem
+    }
+        main .skills .skills-items i{
+            font-size: 3.2rem;
+            color: var(--logo-color);
+            transition: all 0.3s ease;
+        }
+            main .skills .skills-items i:hover{
+                color: var(--logo-color-hover);
+                transform: scale(1.5,1.5);
+                filter: drop-shadow(-3px -3px 2px rgba(184, 88, 96, 0.849))
+                        drop-shadow( 5px  5px 5px rgba(0, 0, 0, 0.2))
+                        drop-shadow( 15px 15px 15px rgba(0, 0, 0, 0.2));
+            }
