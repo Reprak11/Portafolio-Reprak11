@@ -4,12 +4,12 @@
     --background-color: #0D0D0D;
     --logo-color: #001A76;
     --logo-color-hover:#001AA3;
+    --info-color:#E4E1E1;
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 body, html{
     height: 100vh;
@@ -24,6 +24,7 @@ header{
     align-items: center;
     width: 100%;
     border-bottom: solid var(--main-color) 0.1rem;
+    z-index: 100;
 }
     img.logo {
         width: 6.5rem;
@@ -198,3 +199,101 @@ main .skills{
                         drop-shadow( 5px  5px 5px rgba(0, 0, 0, 0.2))
                         drop-shadow( 15px 15px 15px rgba(0, 0, 0, 0.2));
             }
+    main .skills .education{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+        main .skills .education .one-grade{
+            display: flex;
+            flex-direction: column;
+            margin: 0.7rem 0;
+        }
+            main .skills .education .one-grade h3.grade-title{
+                font-size: 1.4rem;
+            }
+            main .skills .education .one-grade span{
+                font-size: 1.3rem;
+            }
+main .portfolio{
+    background-color: var(--background-color);
+    color: var(--main-color);
+    padding: 2rem 0;
+}
+    main .portfolio h2.portfolio-title{
+        font-size:1.9rem;
+        padding: 1.5rem;
+        text-align: center;
+    }
+    main .portfolio .example{
+        width: 100%;
+        height: 22rem;
+        background-image: url("./images/setup.png");
+        background-size: 100% 22rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin: 1rem 0;
+    }
+        main .portfolio img{
+            width: 100%;
+        }
+        main .portfolio .info{
+            opacity: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(217, 48, 62, 0.8);
+            color:var(--info-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: 0.7s;
+            pointer-events: none;
+        }
+            main .portfolio .info.show-info{
+                opacity: 1;
+                pointer-events: auto;
+            }
+            main .portfolio .info h3.example-title{
+                font-size: 1.6rem;
+                margin-top: 2rem;
+            }
+            main .portfolio .info p.description{
+                font-size: 1.2rem;
+                text-align: center;
+                font-weight: bold;
+                margin-top: 1rem;
+            }
+            main .portfolio .info ul.tools{
+                list-style: none;
+                width: 60%;
+                display: flex;
+                justify-content: space-around;
+                margin-top: 1.1rem;
+            }
+                main .portfolio .info ul.tools li i{
+                    font-size: 2.8rem;
+                }
+                main .portfolio .info a.visit-project{
+                    text-decoration:none;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    background-color: var(--background-color);
+                    color: var(--main-color);
+                    margin-top: 2rem;
+                    margin-bottom: 1.5rem;
+                    padding: 0.6rem 3rem;
+                    border-radius: 6px;
+                    transition: all 0.5s ease;
+                } 
+                main .portfolio .info a.visit-project:hover{
+                    background-color: var(--main-color);
+                    box-shadow: inset 4px 7px 35px 22px rgba(13,13,13,0.84);
+                    transform: scale(1.1,1.1);
+                }
+                
+
+            
