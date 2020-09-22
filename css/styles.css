@@ -73,7 +73,7 @@ header{
         font-weight: bold;
         text-transform: uppercase;
     }
-main div.home{
+main .home{
     padding-top: 11rem;
     padding-bottom: 2.5rem;
     width: auto;
@@ -230,7 +230,9 @@ main .portfolio{
         width: 100%;
         height: 22rem;
         background-image: url("./images/setup.png");
-        background-size: 100% 22rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -295,5 +297,77 @@ main .portfolio{
                     transform: scale(1.1,1.1);
                 }
                 
-
-            
+main .hobbies h2.hobbies-title{
+    font-size:1.9rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+main .hobbies a.twitch-link img{
+    width: 100%;
+}
+main .hobbies iframe{
+    width: 100%;
+}
+main .hobbies .twitch-aboutme{
+    padding: 1rem 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+}
+main .hobbies .personal-hobbies{
+    padding: 1rem 0 2rem 0;
+}
+    main .hobbies .personal-hobbies h3.personal-title{
+        font-size: 1.6rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    main .hobbies .personal-hobbies ul{
+        padding-top: 0.3rem;
+        margin-left: 2.2rem;
+        margin-right: 1rem;
+    }
+    main .hobbies .personal-hobbies ul li{
+        margin-top: 1rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+main .contact-me{
+    background-color: var(--background-color);
+    color: var(--main-color);
+}
+    main .contact-me h2.contact-me-title{
+        font-size:1.9rem;
+        text-align: center;
+        padding: 1rem 0 0.5rem 0;
+    }
+    main .contact-me p.contact-description{
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+    }
+    main .contact-me ul.sites{
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        width: 60%;
+        margin: auto;
+        padding: 1.1rem 0;
+    }
+        main .contact-me ul.sites li a i{
+            color: var(--main-color);
+            transition: 0.2s;
+        }
+            main .contact-me ul.sites li a i:hover{
+                color: #C82424 ;
+                transform: scale(1.5,1.5);
+                filter: drop-shadow(-1px -1px 1px rgba(184, 88, 96, 0.849))
+                        drop-shadow( 3px  3px 3px rgba(0, 0, 0, 0.2))
+                        drop-shadow( 13px 13px 13px rgba(0, 0, 0, 0.2));
+            }
+    main .contact-me p.all-rights{
+        text-align: center;
+        padding-bottom: 1.5rem;
+    }
