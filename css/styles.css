@@ -303,6 +303,10 @@ main .hobbies h2.hobbies-title{
     padding-bottom: 1rem;
     text-align: center;
 }
+main .hobbies a.twitch-link{
+    display: flex;
+    justify-content: center;
+}
 main .hobbies a.twitch-link img{
     width: 100%;
 }
@@ -371,3 +375,39 @@ main .contact-me{
         text-align: center;
         padding-bottom: 1.5rem;
     }
+
+/* Media Query for low resolution  Tablets, Ipads */ 
+@media only screen and (min-width:768px) { 
+    main .portfolio .example{
+        height: 25rem;
+    }
+    main .portfolio .info{
+        padding-top: 3rem;
+    }
+    main .hobbies a.twitch-link img{
+        width: 75%;
+    }
+    main .hobbies iframe{
+        height: 32rem;
+    }
+    main .hobbies .twitch-aboutme{
+        padding: 2.5rem 1rem;
+    }
+    main .hobbies .personal-hobbies{
+        padding: 1rem 0 4rem 0;;
+    }
+    main .hobbies .personal-hobbies ul li{
+        margin-top: 2rem;
+    }
+    main .contact-me ul.sites{
+        width: 30%;
+    }
+}
+
+/* Media Query for desktop */
+@media only screen and (min-width:1024px){
+    body { 
+        background-color: yellow; 
+    } 
+    
+}
