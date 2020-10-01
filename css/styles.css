@@ -2,8 +2,8 @@
 :root{
     --main-color: #D9303E;
     --background-color: #0D0D0D;
-    --logo-color: #001A76;
-    --logo-color-hover:#001AA3;
+    --logo-color:rgb(73, 6, 6);
+    --logo-color-hover: rgb(1, 11, 46);
     --info-color:#E4E1E1;
 }
 * {
@@ -377,7 +377,7 @@ main .contact-me{
             main .contact-me ul.sites li a i:hover{
                 color: #C82424 ;
                 transform: scale(1.5,1.5);
-                filter: drop-shadow(-1px -1px 1px rgba(184, 88, 96, 0.849))
+                filter: drop-shadow(-0.5px -0.5px 0.5px rgba(184, 88, 96, 0.849))
                         drop-shadow( 3px  3px 3px rgba(0, 0, 0, 0.2))
                         drop-shadow( 13px 13px 13px rgba(0, 0, 0, 0.2));
             }
@@ -453,13 +453,13 @@ main .contact-me{
     }
     main .home .home-contacts{
     margin: 2.5% 0;
-    width: 14rem;
+    width: 18rem;
     }
     main .home .home-contacts a.home-logos{
-        transform: scale(1.2,1.2);
+        transform: scale(1.5,1.5);
     }
         main .home .home-contacts a.home-logos:hover{
-            transform: scale(1.6,1.6);
+            transform: scale(2,2);
         }
     main .home a.cv-button{
         font-size: 1.7rem;
