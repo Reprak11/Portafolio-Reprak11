@@ -245,6 +245,15 @@ main .portfolio{
         position: relative;
         margin: 1rem 0;
     }
+    main .portfolio .proyect-list .example3{
+        background-image: url("./images/drum-machine.PNG");
+    }
+    main .portfolio .proyect-list .example4{
+        background-image: url("./images/calculadora-react.PNG");
+    }
+    main .portfolio .proyect-list .example5{
+        background-image: url("./images/technical-page.PNG");
+    }
         main .portfolio .proyect-list img{
             width: 100%;
         }
@@ -284,6 +293,11 @@ main .portfolio{
             }
                 main .portfolio .proyect-list .info ul.tools li i{
                     font-size: 2.8rem;
+                }
+                main .portfolio .proyect-list .info ul.tools li img{
+                    width: 3.2rem;
+                    height: 4.2rem;
+                    padding-top: 0.5em;
                 }
                 main .portfolio .proyect-list .info a.visit-project{
                     text-decoration:none;
