@@ -245,6 +245,12 @@ main .portfolio{
         position: relative;
         margin: 1rem 0;
     }
+    main .portfolio .proyect-list .example1{
+        background-image: url("./images/tesis.PNG");
+    }
+    main .portfolio .proyect-list .example2{
+        background-image: url("./images/random-quote.PNG");
+    }
     main .portfolio .proyect-list .example3{
         background-image: url("./images/drum-machine.PNG");
     }
@@ -277,6 +283,7 @@ main .portfolio{
             main .portfolio .proyect-list .info h3.example-title{
                 font-size: 1.6rem;
                 margin-top: 2rem;
+                text-align: center;
             }
             main .portfolio .proyect-list .info p.description{
                 font-size: 1.2rem;
