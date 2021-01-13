@@ -306,6 +306,12 @@ main .portfolio{
                     height: 4.2rem;
                     padding-top: 0.5em;
                 }
+                main .portfolio .proyect-list .info .visit-buttons{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 18em;
+                }
                 main .portfolio .proyect-list .info a.visit-project{
                     text-decoration:none;
                     font-size: 1.5rem;
@@ -322,6 +328,20 @@ main .portfolio{
                     background-color: var(--main-color);
                     box-shadow: inset 4px 7px 35px 22px rgba(13,13,13,0.84);
                     transform: scale(1.1,1.1);
+                }
+                main .portfolio .proyect-list .info .visit-buttons a{
+                    padding-top: 0.3rem;
+                }
+                main .portfolio .proyect-list .info .visit-buttons a i{
+                    font-size: 2.8rem;
+                    color: var(--background-color);
+                    transition: all 0.5s ease;
+                }
+                main .portfolio .proyect-list .info .visit-buttons a i:hover{
+                    color: var(--main-color);
+                    box-shadow: inset 4px 7px 35px 22px rgba(13,13,13,0.84);
+                    transform: scale(1.1,1.1);
+                    border-radius: 5px;
                 }
                 
 main .hobbies h2.hobbies-title{
